@@ -1,0 +1,246 @@
+li:nth-child(2) a{
+    font-size:120%;
+  font-weight:bolder;
+  }
+
+.container_work {
+    background-color: rgb(247, 247, 247);
+    margin: 2em auto 3em;
+    width: 85vw;
+    height: 80vh;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1vw;
+}
+
+.box_a {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.box_b {
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+.box_c {
+    grid-column: 5/7;
+    grid-row: 1/5;
+}
+
+.box_d {
+    grid-column: 7/9;
+    grid-row: 1/5;
+}
+
+.box_e {
+    grid-column: 1/5;
+    grid-row: 3/7;
+}
+
+.box_f {
+    grid-column: 5/9;
+    grid-row: 5/7;
+}
+
+.box_a,
+.box_b,
+.box_c,
+.box_d,
+.box_e,
+.box_f {
+    background-color: darkgrey;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: 100%;
+        transform: scale(1.1);
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+}
+
+.box_a:hover,
+.box_b:hover,
+.box_c:hover,
+.box_d:hover,
+.box_e:hover,
+.box_f:hover {
+    img {
+        transform: scale(1);
+        transition: 0.5s;
+        filter: grayscale(20%);
+        // opacity: 0.5;
+    }
+    .overlay {
+        background-color: rgba(129, 129, 129, 0.4);
+        transition: 0.5s;
+        opacity: 1;
+        position: absolute;
+
+        .overlaybox {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(189, 189, 189, 0.849);
+            // border: 0.5px solid white;
+            height: 80%;
+            width: 80%;
+            padding: 1vw;
+            overflow: auto;
+
+            h3 {
+                font-size: 12px;
+                color: white;
+                margin: 0;
+            }
+            p {
+                font-size: 8px;
+                color: white;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+// ================================================= Grid Animation =====================================================
+
+.box_a,
+.box_b {
+    animation-name: fromtop;
+    animation-duration: 1.5s;
+}
+
+.box_c,
+.box_d {
+    animation-name: fromright;
+    animation-duration: 1.5s;
+}
+.box_e {
+    animation-name: fromleft;
+    animation-duration: 1.5s;
+}
+.box_f {
+    animation-name: frombottom;
+    animation-duration: 1.5s;
+}
+
+@keyframes fromtop {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+@keyframes fromright {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+@keyframes frombottom {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 0%;
+    }
+}
+@keyframes fromleft {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+// ============================================  device scale ==================================================
+
+@media screen and (max-width: 1024px) {
+    .container_work {
+        grid-template-columns: (1fr);
+        grid-template-rows: repeat(6, 1fr);
+        height: 1500px;
+        grid-gap: 5vw;
+    }
+
+    .box_a,
+    .box_b,
+    .box_c,
+    .box_d,
+    .box_e,
+    .box_f {
+        animation-name: fromleft;
+        animation-duration: 1s;
+
+        img {
+            height: 100%;
+            width: 100%;
+            transform: scale(1.1);
+            object-fit: cover;
+        }
+    }
+
+
+    @keyframes fromleft {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
+
+    .box_a {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+
+    .box_b {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+
+    .box_c {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+    }
+
+    .box_d {
+        grid-row: 4/5;
+        grid-column: 1/-1;
+    }
+
+    .box_e {
+        grid-row: 5/6;
+        grid-column: 1/-1;
+    }
+
+    .box_f {
+        grid-row: 6/7;
+        grid-column: 1/-1;
+    }
+}

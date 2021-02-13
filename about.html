@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kit Website - About Me</title>
+    <script src="https://use.fontawesome.com/103b81eef9.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <img src="./image/logo.png"></a>
+        <nav>
+            <ul>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./work.html">work</a></li>
+                <li><a href="./gallery.html">gallery</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="about_container">
+        <div class="title">About Me</div>
+        <svg>
+            <line x1="0" y1="0" x2="0" y2="1250" id="line">
+        </svg>
+        <div class="timeline">
+
+            <div class="a1">
+                <div class="content">
+                    <h3>1990</h3>
+                    <p> Born in Hong Kong
+                        
+
+                    </p>
+                </div>
+            </div>
+            <div class="a2">
+                <img src="./image/about_timeline_a.JPG">
+            </div>
+            <div class="b1">
+                <img src="./image/about_timeline_b.JPG">
+            </div>
+            <div class="b2">
+                <div class="content">
+                    <h3>2011</h3>
+                    <p> My first sketching</p>
+                </div>
+            </div>
+            <div class="c1">
+                <div class="content">
+                    <h3>2011-2014</h3>
+                    <p>HKDI</p>
+                </div>
+            </div>
+            <div class="c2">
+                <img src="./image/hkdi.jpg">
+            </div>
+            <div class="d1">
+                <img src="./image/gw.jpg">
+            </div>
+            <div class="d2">
+                <div class="content">
+                    <h3>2014-2017</h3>
+                    <p> Graphic Designer in Global Wise International Limited</p>
+                </div>
+            </div>
+            <div class="e1">
+                <div class="content">
+                    <h3>2017-2020</h3>
+                    <p> Graphic Designer in Jupiter Prestige Group - Asia</p>
+                </div>
+            </div>
+            <div class="e2">
+                <img src="./image/jpg.jpg">
+            </div>
+            <div class="f1">
+                <img src="./image/ciccc.jpg">
+            </div>
+            <div class="f2">
+                <div class="content">
+                    <h3>2020</h3>
+                    <p>Study in Cornerstone International Coummunity College</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <a href="#top">
+            <div class="backtop">Back to top</div>
+        </a>
+        <div class="footer_container">
+
+            <a href="https://www.instagram.com/kitkitkis/" target="_blank"><i class="fa fa-instagram fa-4x"
+                aria-hidden="true"></i></a>
+            <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-official fa-4x"
+                    aria-hidden="true"></i></a>
+            <a href="mailto:kit486759@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-4x"
+                    aria-hidden="true"></i></a>
+            <br>
+            Copyright © 2021 KitSo All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+
+        var line = document.getElementById("line");
+        var length = line.getTotalLength();
+        line.style.strokeDasharray = length;
+        line.style.strokeDashoffset = length;
+
+        window.addEventListener("scroll", myFunction);
+
+        function myFunction() {
+            var scrollpercent =
+
+
+                (document.body.scrollTop + document.documentElement.scrollTop) /
+                (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+            var draw = length * scrollpercent;
+            line.style.strokeDashoffset = length - draw;
+        }
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

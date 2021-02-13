@@ -1,0 +1,145 @@
+li:nth-child(3) a{
+    font-size:120%;
+  font-weight:bolder;
+  }
+
+
+.container_gallery {
+    background-color: rgb(247, 247, 247);
+    margin: 2em auto 3em;
+    width: 90vw;
+ 
+    padding: 1vw;
+display:block;
+
+    .pic {
+        position: relative;
+        height: 12.5vw;
+        width: 12.5vw;
+        float: left;
+        border: 5px solid white;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+}
+
+body{
+    height:100%;
+}
+
+.pic:nth-child(1),
+.pic:nth-child(10),
+.pic:nth-child(17) {
+    height: 25vw;
+    width: 25vw;
+}
+
+.pic:nth-child(11),
+.pic:nth-child(13),
+.pic:nth-child(15),
+.pic:nth-child(17) {
+    margin-top: -12.5vw;
+}
+
+// .pic:nth-child(23) img {
+//     object-fit: fill !important;
+// }
+
+
+.pic{
+    img{
+       height:100%;
+    }
+}
+
+
+.lightbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    background-color: #00000077;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(0.5);
+}
+.lightbox:target {
+    z-index: 1;
+    opacity: 1;
+    transition: 0.3s;
+    position: fixed;
+    transform: scale(1);
+    img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        margin: auto;
+        height: 85vh !important;
+        // width: 95vh !important;
+        object-fit: cover;
+        object-position: inherit;
+    }
+
+    .caption {
+        position: absolute;
+        width: 100%;
+        height: 15vh;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.877);
+    }
+
+    p {
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        margin:0;
+        color:white;
+    }
+}
+
+@media screen and (max-width:  1146px) {
+    .container_gallery .pic {
+        position: relative;
+        height: 29vw;
+        width: 29vw;
+    }
+
+    .pic:nth-child(11),
+    .pic:nth-child(13),
+    .pic:nth-child(15),
+    .pic:nth-child(17) {
+        margin-top: 0;
+    }
+  
+}
+
+@media screen and (max-width: 649px) {
+  
+    .container_gallery .pic {
+        position: relative;
+        height: 22vw;
+        width: 22vw;
+    }
+
+    .pic:nth-child(11),
+    .pic:nth-child(13),
+    .pic:nth-child(15),
+    .pic:nth-child(17) {
+        margin-top: 0;
+    }
+  
+}
+

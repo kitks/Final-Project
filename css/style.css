@@ -1,0 +1,358 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header img {
+  width: 100px;
+  margin: 1em 1em 0 3em;
+}
+
+@media (min-width: 650px) {
+  nav {
+    display: inline;
+    position: absolute;
+    right: 2em;
+    top: 3em;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline;
+  }
+  nav a {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin: 0 2em;
+  }
+  nav a:hover {
+    opacity: 0.5;
+  }
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer_container {
+  margin: auto;
+  width: 70vw;
+  color: white;
+  padding: 3em 0;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+footer .footer_container a:hover {
+  opacity: 0.8;
+}
+
+footer .footer_container a:hover .fa {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+footer .footer_container .fa {
+  margin: 0.1em 0.6em;
+}
+
+.backtop {
+  background-color: #161616;
+  color: white;
+  z-index: 3;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.backtop:hover {
+  background-color: #1f1f1f;
+}
+
+@media (min-width: 651px) {
+  .container {
+    background-color: #f7f7f7;
+    margin: 2em auto 3em;
+    width: 70vw;
+    height: 80vh;
+    padding: 0.2em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+  }
+  .container_aboutme {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 /4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+    position: relative;
+  }
+  .container_aboutme_text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 /4;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    grid-row: 5/7;
+    padding: 1em;
+    overflow: auto;
+  }
+  .container_aboutme_text h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .container_aboutme_text p {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-size: 0.5em;
+  }
+  .container_work {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-column: 4 /6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    overflow: hidden;
+    position: relative;
+  }
+  .container_gallery {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-column: 4 /6;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3 /5;
+    overflow: hidden;
+    position: relative;
+  }
+  .container_contact {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-column: 4 /6;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    grid-row: 5 /7;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.coverimg {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.hovertitle {
+  text-align: center;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 5em;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover .hovertitle {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  font-size: 4.5em;
+}
+
+a:hover .coverimg {
+  -webkit-filter: blur(2px) grayscale(100%);
+          filter: blur(2px) grayscale(100%);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@media screen and (max-width: 1230px) {
+  .hovertitle {
+    font-size: 2.5em;
+  }
+  a:hover .hovertitle {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 1;
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 1230px) and (max-width: 650px) {
+  footer {
+    bottom: 2px;
+    width: 100%;
+    height: 100%;
+  }
+  header img {
+    width: 120px;
+    margin: 1em auto;
+    display: block;
+  }
+  nav {
+    display: block;
+    margin: 0 auto;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav li {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  nav a {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+  .hovertitle {
+    font-size: 3em;
+  }
+  .coverimg {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+  }
+  .container {
+    background-color: #f7f7f7;
+    margin: 1em auto 3em;
+    width: 90vw;
+    height: 150vh;
+    padding: 0.2em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[19];
+        grid-template-rows: repeat(19, 1fr);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  .container_aboutme {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 9;
+    grid-row: 1/10;
+    grid-column: 1/-1;
+    position: relative;
+  }
+  .container_aboutme_text {
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 1;
+    grid-row: 10/11;
+    grid-column: 1/-1;
+    padding: 1em;
+  }
+  .container_aboutme_text h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .container_aboutme_text p {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-size: 0.05em;
+  }
+  .container_work {
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 3;
+    grid-row: 11/14;
+    grid-column: 1/-1;
+    overflow: hidden;
+    position: relative;
+  }
+  .container_gallery {
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 3;
+    grid-row: 14/17;
+    grid-column: 1/-1;
+    overflow: hidden;
+    position: relative;
+  }
+  .container_contact {
+    -ms-grid-row: 17;
+    -ms-grid-row-span: 3;
+    grid-row: 17/20;
+    grid-column: 1/-1;
+    overflow: hidden;
+    position: relative;
+  }
+  .coverimg {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: grayscale(50%);
+            filter: grayscale(50%);
+  }
+  .hovertitle {
+    text-align: center;
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5em;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+  }
+  a:hover .hovertitle {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 1;
+    font-size: 3em;
+  }
+  a:hover .coverimg {
+    -webkit-filter: blur(2px) grayscale(100%);
+            filter: blur(2px) grayscale(100%);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+}
+/*# sourceMappingURL=style.css.map */

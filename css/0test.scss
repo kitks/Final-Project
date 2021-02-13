@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+.firstbg{
+    background-image:url("https://www.popsci.com/resizer/D8DKFpdLmq8X31aLiO4JCG6KFSc=/1293x862/cloudfront-us-east-1.images.arcpublishing.com/bonnier/3NIEQB3SFVCMNHH6MHZ42FO6PA.jpg");
+height:600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.firstbox{
+    background-color: darkgray;
+    height:200px;
+}
+
+.secondbg{
+    background-image:url("https://blog.prezi.com/wp-content/uploads/2019/03/joshua-earle-157231-unsplash-1024x683.jpg");
+    height:600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.secondbox{
+    background-color: darkgray;
+    height:200px;
+}

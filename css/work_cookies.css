@@ -1,0 +1,87 @@
+.container_work_cookies {
+  margin: 2em 0 0;
+  width: 100%;
+  height: 4810px;
+}
+
+.bg1 {
+  background: url("../image/work_page/cookies/work_cookie2-01.jpg");
+}
+
+.bg2 {
+  background: url("../image/work_page/cookies/work_cookie2-02.jpg");
+}
+
+.bg3 {
+  background: url("../image/work_page/cookies/work_cookie2-03.jpg");
+}
+
+.bg4 {
+  background: url("../image/work_page/cookies/work_cookie2-04.jpg");
+}
+
+.bg5 {
+  background: url("../image/work_page/cookies/bg5.jpg");
+}
+
+.bg6 {
+  position: absolute;
+  top: 200px;
+}
+
+.bg1,
+.bg2,
+.bg3,
+.bg4,
+.bg5,
+.bg6 {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.section {
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 2vw;
+}
+
+.section .box {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 5vw;
+  position: relative;
+}
+
+.section .box .box_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  overflow: auto;
+  color: #494949;
+}
+
+.section .box .box_content h4 {
+  margin: 0;
+}
+
+.section .box .box_content p {
+  margin-bottom: 0;
+  font-size: 0.5vw;
+}
+
+.section .box .box_content a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=work_cookies.css.map */

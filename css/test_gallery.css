@@ -1,0 +1,157 @@
+.container_gallery {
+  margin: 2em auto 3em;
+  width: 95vw;
+  height: auto;
+}
+
+.container_gallery > .thumbnail {
+  padding: 0 8px;
+}
+
+/* Create four equal columns that floats next to eachother */
+.thumbnail {
+  float: left;
+  width: 31vw;
+}
+
+.thumbnail img {
+  width: 30vw;
+  height: 50vh;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slides {
+  height: 70vh;
+}
+
+.slides img {
+  width: 100%;
+  height: 70vh;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+img.modal_thumbnail {
+  height: 30vh;
+  width: 25vw;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 65px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal_content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  height: 60vh;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.slides {
+  display: none;
+}
+
+/*========================================     Next & previous buttons       ==================================*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*========================================     Number Text (X/4)      ==================================*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*========================================     Caption text      ==================================*/
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+/*========================================     img hover     ==================================*/
+img.modal_thumbnail {
+  opacity: 0.6;
+}
+
+.active,
+.modal_thumbnail:hover {
+  opacity: 1;
+}
+
+img.hover_thumbnail {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hover_thumbnail:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*# sourceMappingURL=test_gallery.css.map */
