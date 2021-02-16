@@ -1,3 +1,8 @@
+li:nth-child(2) a {
+  font-size: 120%;
+  font-weight: bolder;
+}
+
 .container_work_cookies {
   margin: 2em 0 0;
   width: 100%;
