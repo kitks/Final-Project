@@ -14,7 +14,7 @@
   position: absolute;
   top: 146px;
   left: 50%;
-  height: 1280px;
+  height: 1250px;
   stroke: black;
   stroke-width: 6px;
   -webkit-transform: translate(-1%);
@@ -327,7 +327,7 @@ li:nth-child(1) a {
     width: 50px;
     top: 158px;
     left: 50%;
-    height: 1300px;
+    height: 1250px;
     stroke: black;
     stroke-width: 2px;
   }
