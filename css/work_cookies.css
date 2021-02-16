@@ -84,4 +84,42 @@
 .section .box .box_content a {
   text-decoration: none;
 }
+
+@media (min-width: 768px) and (max-width: 1738px) {
+  .bg1,
+  .bg2,
+  .bg3,
+  .bg4,
+  .bg5,
+  .bg6 {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .container_work_cookies {
+    height: 3020px;
+  }
+  .container_work_cookies .bg1,
+  .container_work_cookies .bg2,
+  .container_work_cookies .bg3,
+  .container_work_cookies .bg4,
+  .container_work_cookies .bg5,
+  .container_work_cookies .bg6 {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: none;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=work_cookies.css.map */

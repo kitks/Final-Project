@@ -157,6 +157,16 @@ li:nth-child(2) a {
   overflow: auto;
 }
 
+.box_a:hover .overlay .overlaybox a,
+.box_b:hover .overlay .overlaybox a,
+.box_c:hover .overlay .overlaybox a,
+.box_d:hover .overlay .overlaybox a,
+.box_e:hover .overlay .overlaybox a,
+.box_f:hover .overlay .overlaybox a {
+  height: 100%;
+  width: 100%;
+}
+
 .box_a:hover .overlay .overlaybox h3,
 .box_b:hover .overlay .overlaybox h3,
 .box_c:hover .overlay .overlaybox h3,

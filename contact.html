@@ -23,37 +23,31 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="container_aboutme">
-            <a href="./about.html">
-                <div class="hovertitle">About<br>Me</div>
-                <img class="coverimg" src="./image/container_aboutme_portrait.jpg" alt="aboutme_portrait_cover">
-            </a>
+
+    <div class="container_contact">
+
+        <div class="contact_form">
+            <div class="form_container">
+                <h3>Tell me anything</h3>
+                <form action="/action_page.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <label for="lname">Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
-        <div class="container_aboutme_text">
-            <h3>About me</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quam optio, libero quos commodi vel!
-                Suscipit quae eaque aperiam quisquam dolores nulla laborum natus optio? Voluptas consequuntur delectus
-                quisquam magnam?</p>
-        </div>
-        <div class="container_work">
-            <a href="./work.html">
-                <div class="hovertitle">Work</div><img class="coverimg" src="./image/container_work_cover.jpg"
-                    alt="mywork_cover">
-            </a>
-        </div>
-        <div class="container_gallery">
-            <a href="./gallery.html">
-                <div class="hovertitle">Gallery</div><img class="coverimg" src="./image/container_gallery_cover.jpg"
-                    alt="mygallery_cover">
-            </a>
-        </div>
-        <div class="container_contact">
-            <a href="">
-                <div class="hovertitle">Contact</div><img class="coverimg" src="./image/container_contact_cover.jpg"
-                    alt="contact_me_cover">
-            </a>
-        </div>
+
     </div>
 
     <footer>

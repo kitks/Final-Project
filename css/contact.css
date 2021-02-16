@@ -2,4 +2,43 @@ li:nth-child(4) a {
   font-size: 120%;
   font-weight: bolder;
 }
+
+.container_contact {
+  margin: auto;
+  padding: 1vw;
+}
+
+.container_contact .contact_form {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.container_contact .contact_form .form_container {
+  background-color: #f7f7f7;
+  border: 1em;
+  margin: 1em auto 3em;
+  padding: 1vw;
+}
+
+.container_contact .contact_form .form_container h3 {
+  margin: 0 0 0.8em;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact_form {
+    height: 80vh !important;
+  }
+}
 /*# sourceMappingURL=contact.css.map */
