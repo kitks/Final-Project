@@ -13,12 +13,13 @@
 .about_container svg {
   position: absolute;
   top: 146px;
-  left: 50%;
+  left: 50% !important;
   height: 1250px;
   stroke: black;
   stroke-width: 6px;
   -webkit-transform: translate(-1%);
           transform: translate(-1%);
+  z-index: 2;
 }
 
 li:nth-child(1) a {
@@ -326,10 +327,11 @@ li:nth-child(1) a {
     position: absolute;
     width: 50px;
     top: 158px;
-    left: 50%;
+    left: 50% !important;
     height: 1250px;
     stroke: black;
     stroke-width: 2px;
+    z-index: 2;
   }
   .a2,
   .c2,

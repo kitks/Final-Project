@@ -12,12 +12,13 @@
     svg {
         position: absolute;
         top: 146px;
-        left: 50%;
+        left: 50% !important;
         // width: 3px;
         height: 1250px;
         stroke: rgb(0, 0, 0);
         stroke-width: 6px;
         transform: translate(-1%);
+        z-index: 2;
     }
 }
 
@@ -225,10 +226,11 @@ font-weight:bolder;
             position: absolute;
             width: 50px;
             top: 158px;
-            left: 50%;
+            left: 50%!important;
             height: 1250px;
             stroke: rgb(0, 0, 0);
             stroke-width: 2px;
+            z-index: 2;
         }
     }
 
